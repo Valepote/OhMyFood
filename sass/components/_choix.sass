@@ -1,0 +1,46 @@
+.choix
+    ul 
+        @include reset-list
+
+        li
+            a
+                @include reset-link
+                @include rounding
+                background-color: $grey-light
+                margin-top: $size-15px
+                padding: $size-20px
+                margin-left: $size-20px
+                @include flex(row, flex-start, center)
+                color: $black
+
+                &::before
+                    background-color: $primaire
+                    display: block
+                    height: $size-20px
+                    width: $size-20px
+                    @include circle
+                    margin-left: -$size-35px
+                    margin-right: $size-20px
+                    padding: $size-5px
+                    color: $white
+                    @include flex(row, center, center)
+                    font-weight: $font-weight-semibold
+
+                .fa-solid
+                    margin-right: $size-20px
+                    color: $black-transparent
+
+            @for $i from 1 through 3 
+                &:nth-child(#{$i})
+                    a
+                        &::before
+                            content: "#{$i}"
+
+            &:nth-child(3)
+                a
+                    .fa-solid
+                        color: $primaire
+                
+
+                
+             

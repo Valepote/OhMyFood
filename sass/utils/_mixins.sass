@@ -1,0 +1,41 @@
+@mixin reset
+    margin: $size-0px
+    padding: $size-0px
+
+@mixin reset-list
+    list-style-type: none
+    @include reset
+
+@mixin reset-link
+    @include reset
+    display: block
+    text-decoration: none
+
+@mixin reset-border
+    border: none
+    outline: none
+
+@mixin flex($direction, $justify-content, $align-items)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify-content
+    align-items: $align-items
+
+@mixin text-center
+    text-align: center
+
+@mixin shadow
+    box-shadow: 1px 3px 3px 1px $black-transparent
+
+@mixin circle
+    border-radius: $size-100
+
+@mixin rounding
+    border-radius: $size-25px
+
+@mixin absolu
+    position: absolute
+    
+
+
+    

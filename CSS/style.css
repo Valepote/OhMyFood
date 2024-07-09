@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;800&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "Shrikhand", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.card {
+  background-color: #fff;
+}
+.card h3 {
+  color: #000;
+}
+.card h3-title {
+  color: #000;
+}
+.card h3-title p {
+  color: #000;
+}
+
+.footer {
+  background-color: #424949;
+  box-sizing: border-box;
+}
+.footer h4 {
+  color: #fff;
+}
+.footer ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.footer ul li a {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  padding: 15px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.choix ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.choix ul li a {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  margin-top: 15px;
+  padding: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #000;
+}
+.choix ul li a::before {
+  background-color: #9356DC;
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-left: -35px;
+  margin-right: 20px;
+  padding: 5px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.choix ul li a .fa-solid {
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.choix ul li:nth-child(1) a::before {
+  content: "1";
+}
+.choix ul li:nth-child(2) a::before {
+  content: "2";
+}
+.choix ul li:nth-child(3) a::before {
+  content: "3";
+}
+.choix ul li:nth-child(3) a .fa-solid {
+  color: #9356DC;
+}
+
+.city {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  margin-top: 80px;
+  background-color: #f2f2f2;
+  z-index: -1;
+}
+.city input {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin-left: 15px;
+  width: 120px;
+  font-size: 17px;
+}
+.city input::placeholder {
+  opacity: 1;
+  color: #000;
+}
+
+.descript {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search button {
+  border-radius: 25px;
+  background-color: #ff79da;
+  margin-top: 15px;
+  border-color: #ff79da;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
