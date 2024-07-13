@@ -151,26 +151,24 @@ h4 {
   color: #000;
 }
 
-.descript {
+.explorer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-color: #f2f2f2;
+  margin-top: 5px;
 }
-
-.search {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.search button {
+.explorer button {
   border-radius: 25px;
-  background-color: #ff79da;
+  background-image: linear-gradient(to top, #9356DC, #ff79da);
   margin-top: 15px;
-  border-color: #ff79da;
+  border: none;
+  box-shadow: 2px 1px 14px 1px rgba(0, 0, 0, 0.3);
   padding: 15px;
+  color: #fff;
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */
