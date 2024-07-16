@@ -10,36 +10,27 @@ body {
 }
 
 h1 {
-  font-family: "Shrikhand", serif;
+  font-family: "Shrikhand", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 h4 {
-  font-family: "Shrikhand", serif;
+  font-family: "Shrikhand", sans-serif;
   font-weight: 300;
   font-style: normal;
-}
-
-.card {
-  background-color: #fff;
-}
-.card h3 {
-  color: #000;
-}
-.card h3-title {
-  color: #000;
-}
-.card h3-title p {
-  color: #000;
 }
 
 .footer {
   background-color: #424949;
   box-sizing: border-box;
+  padding: 20px;
 }
 .footer h4 {
+  margin: 0px;
+  padding: 0px;
   color: #fff;
+  margin-bottom: 15px;
 }
 .footer ul {
   list-style-type: none;
@@ -62,16 +53,21 @@ h4 {
   box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.3);
   position: absolute;
   padding: 15px;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
+  background-color: #fff;
 }
 .header h1 {
   margin: 0px;
   padding: 0px;
 }
 
+.choix {
+  padding: 20px;
+  padding-bottom: 50px;
+}
 .choix ul {
   list-style-type: none;
   margin: 0px;
@@ -132,10 +128,14 @@ h4 {
   justify-content: center;
   align-items: center;
   box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 1;
   padding: 15px;
   margin-top: 80px;
   background-color: #f2f2f2;
-  z-index: -1;
+  width: 100%;
+  top: 0px;
+  box-sizing: border-box;
 }
 .city input {
   background-color: #f2f2f2;
@@ -156,9 +156,15 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 50px;
   background-color: #f2f2f2;
-  margin-top: 5px;
+  margin-top: 135px;
+}
+.explorer h2, .explorer p {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .explorer button {
   border-radius: 25px;
@@ -169,6 +175,77 @@ h4 {
   padding: 15px;
   color: #fff;
   font-size: 17px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.explorer button:hover {
+  opacity: 0.5;
+  box-shadow: 2px 1px 14px 1px rgba(0, 0, 0, 0.7);
+}
+
+.resto-head {
+  display: block;
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+}
+.resto-head .resto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.resto-head .resto .menu-card {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  text-decoration: none;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.resto-head .resto .menu-card h3, .resto-head .resto .menu-card p {
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+.resto-head .resto .menu-card h3 {
+  padding: 20px;
+  padding-bottom: 5px;
+}
+.resto-head .resto .menu-card p {
+  padding: 20px;
+  padding-top: 0px;
+}
+.resto-head .resto .menu-card img {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  object-fit: cover;
+}
+
+.pages-img {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 77px;
+  object-fit: cover;
+  z-index: -1;
+}
+.pages-container {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 280px;
+}
+.pages-container h2 {
+  margin: 0px;
+  padding: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
