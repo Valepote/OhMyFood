@@ -78,7 +78,7 @@ h4 {
   padding: 0px;
   display: block;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: #f2f2f2;
   margin-top: 15px;
   padding: 20px;
@@ -167,7 +167,7 @@ h4 {
   margin-bottom: 20px;
 }
 .explorer button {
-  border-radius: 20px;
+  border-radius: 25px;
   background-image: linear-gradient(to top, #9356DC, #ff79da);
   margin-top: 15px;
   border: none;
@@ -200,7 +200,7 @@ h4 {
   padding: 0px;
   display: block;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
   background-color: #fff;
   padding: 0px;
@@ -212,19 +212,18 @@ h4 {
   padding: 0px;
   color: #000;
 }
-.resto-head .resto .menu-card h3 {
-  padding: 20px;
-  padding-bottom: 5px;
-}
-.resto-head .resto .menu-card p {
-  padding: 20px;
-  padding-top: 0px;
-}
 .resto-head .resto .menu-card img {
   width: 100%;
   height: 200px;
   background-color: #fff;
   object-fit: cover;
+}
+.resto-head .resto .resto-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
 }
 
 .pages-img {
@@ -242,6 +241,13 @@ h4 {
   background-color: #f2f2f2;
   padding: 10px;
   margin-top: 280px;
+}
+.pages-container-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
 }
 .pages-container h2 {
   font-family: "Shrikhand", sans-serif;
@@ -267,7 +273,7 @@ h4 {
   background-color: #99e2d0;
 }
 .pages-container button {
-  border-radius: 20px;
+  border-radius: 25px;
   background-image: linear-gradient(to top, #9356DC, #ff79da);
   margin-top: 15px;
   border: none;
@@ -310,6 +316,40 @@ h4 {
 }
 .menu-detail .prix {
   font-weight: 500;
+}
+
+.heart-animation {
+  font-size: 25px;
+  width: 25px;
+  height: 26px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+.heart-animation-empty {
+  opacity: 1;
+}
+.heart-animation-full {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+  transition: 0.3s;
+}
+.heart-animation:hover > .heart-animation-empty {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+}
+.heart-animation:hover > .heart-animation-full {
+  opacity: 1;
+  height: 26px;
+  width: 25px;
+}
+.heart-animation:hover > .heart-animation-full i {
+  background: linear-gradient(to top, #ff79da, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
