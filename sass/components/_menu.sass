@@ -1,4 +1,24 @@
 .menu
+    &-block
+        @include reset
+        overflow: hidden
+        li
+            animation: appear 1s ease-in-out
+            animation-fill-mode: forwards
+            transition: 0.3s
+            height: 0px
+            opacity: 0
+
+            &:nth-child(1)                
+                animation-delay: 0s
+               
+            &:nth-child(2)                
+                animation-delay: 1s
+                
+            &:nth-child(3)                
+                animation-delay: 2s
+              
+
     &-detail
         @include reset-link
         border-radius: 15px
@@ -7,16 +27,69 @@
         overflow: hidden
         background-color: $white
         box-shadow: 0px 0px 10px 0px $grey-transparent
-        padding: 15px 10px
         width: 100%
         margin-bottom: 15px
 
         h4, p
             @include reset
+            padding: 15px
+            box-sizing: border-box
 
         h4
             margin-bottom: 5px
+            padding-bottom: 0px
+
+        p
+            padding-top: 0px
+
+
+        .menu-title
+            width: 90%
+  
+      
+            p, h4
+                text-overflow: ellipsis
+                overflow: hidden
+                white-space: nowrap
+
+            
+
+        .menu-item
+            @include flex(row, space-between, flex-end)
+            padding: 0px
+            width: 100%  
+            overflow: hidden
 
         .prix
             font-weight: 500
+            width: 10%
+            padding: 0px
+            padding-bottom: 15px
+            box-sizing: border-box
+
+        .menu-check
+            @include flex(row, center, center)
+            background-color: $tertiaire
+            color: #fff
+            padding: 25px
+            width: 20%
+            box-sizing: border-box
+            transition: 0.3s
+            font-size: 1.5rem
+            margin-right: -30%
+
+        &:hover
+            .menu-item
+                width: 75%
+            .menu-check
+                margin-right: 0px
+
+@keyframes appear
+    0%
+        height: 0
+        opacity: 0
+    100%
+        height: auto
+        opacity: 1
+
 

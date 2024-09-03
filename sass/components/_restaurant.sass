@@ -6,6 +6,29 @@
 
     .resto
         @include flex(column,space-between,center)
+        @media (screen and min-width: $breakpoint-tablet)
+            @include flex(row, space-between, center)
+            width: 100%
+            flex-wrap: wrap
+            box-sizing: border-box
+
+        .menu-new-container
+            @include flex(row,flex-end,flex-end)
+            width: 90%
+            box-sizing: border-box
+            position: absolute
+            @media (screen and min-width: $breakpoint-tablet)
+                width: 482px
+
+        .menu-new
+            background-color: $tertiaire
+            padding: 10px 15px
+            @include shadow
+            color: $tertiaire-dark
+            font-weight: bold
+            @include rounding-small
+            margin-top: 20px
+            margin-right: 20px
 
         .menu-card
             @include reset-link  
@@ -15,6 +38,10 @@
             padding: 0px
             width: 100%
             margin-bottom: 20px
+
+            @media (screen and min-width: $breakpoint-tablet)
+                width: 47%
+                
 
             h3, p
                 @include reset
@@ -29,9 +56,6 @@
         .resto-text
             @include flex(row,space-between,center)
             padding: 15px
-
-
-            
 
 
 

@@ -5,13 +5,13 @@
     z-index: $z-1
     padding: $size-15px
     margin-top: $size-80px
-    background-color: $grey-light
+    background-color: $grey-dark
     width: 100%
     top: 0px
     box-sizing: border-box
 
     input
-        background-color: $grey-light
+        background-color: $grey-dark
         @include reset-border
         @include text-center
         margin-left: $size-15px
@@ -20,6 +20,9 @@
         &::placeholder
             opacity: $opacity-1
             color: $black
+
+    @media (screen and min-width: $breakpoint-tablet)
+        @include reset-shadow
 
 
 

@@ -4,8 +4,14 @@
 
     ul 
         @include reset-list
+        @media (screen and min-width: $breakpoint-tablet)
+            @include flex(row, space-between, center)
+        
 
         li
+            @media (screen and min-width: $breakpoint-tablet)
+                font-weight: 500
+                width: 33%
             a
                 @include reset-link
                 @include rounding
@@ -15,6 +21,7 @@
                 margin-left: $size-20px
                 @include flex(row, flex-start, center)
                 color: $black
+
 
                 &::before
                     background-color: $primaire
